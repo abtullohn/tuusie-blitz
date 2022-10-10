@@ -35,3 +35,9 @@ class NewQuestionForm(forms.ModelForm):
     class Meta:
         model = Question
         fields = ['title', 'body']
+        widgets = {
+            'title': forms.TextInput(attrs={
+                'autofocus': True,
+                'placeholder': 'What is the topic?'
+            })
+        }

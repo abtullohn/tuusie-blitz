@@ -60,6 +60,7 @@ ul{
     flex-direction: column;
 }
 
+.new-question-page,
 .login-page,
 .register-page{
     margin: 0 auto;

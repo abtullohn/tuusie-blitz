@@ -55,6 +55,21 @@ def logoutPage(request):
 @login_required(login_url='register')
 def newQuestionPage(request):
     form = NewQuestionForm()
+    
+    if request.method == 'POST':
+        try:
+            form = NewQuestionForm(request.POST)
+            if form.is_valid():
+                question = form.save(commit=False)
+                question.author = request.user
+                question.save()
+
+        except Exception as e:
+            print(e)
+            raise
+    
+
+
     context={'form': form}
     return render(request, 'new-question.html', context)
 
@@ -66,4 +81,8 @@ def homePage(request):
     return render(request,'homepage.html', context)
 
 def questionPage(request, id):
-    return None
+    question = Question.objects.get()
+
+    context = {
+    }
+    return render(request, 'question.html', context)
