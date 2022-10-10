@@ -1,6 +1,7 @@
 from ast import Try
+from telnetlib import LOGOUT
 from django.shortcuts import render, redirect
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from .models import Question
 from .forms import RegisterUserForm, LoginForm
 # Create your views here
@@ -43,6 +44,10 @@ def loginPage(request):
 
     context ={'form': form}
     return render(request, 'login.html', context)
+
+def logoutPage(request):
+    logout(request)
+    return redirect('login')
 
 def homePage(request):
     questions = Question.objects.all().order_by('-created_at')
