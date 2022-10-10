@@ -14,3 +14,13 @@ An application to ask questions and get answers that you need!
 
 
 <img width="503" alt="Screen Shot 2022-10-10 at 11 02 50 AM" src="https://user-images.githubusercontent.com/109837082/194897283-c9cd988a-38f6-4c6f-8411-044cca934ca9.png">
+
+
+# ERD
+
+<img width="901" alt="Screen Shot 2022-10-10 at 11 05 48 AM" src="https://user-images.githubusercontent.com/109837082/194897519-4b502009-ee6a-40ee-a9e0-b57ac650ec52.png">
+
+# Technologies Used
+- Django
+- Python
+- Postgresql
