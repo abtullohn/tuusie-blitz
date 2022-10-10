@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from .models import Question
-
+from .forms import RegisterUserForm
 # Create your views here
 
 def registerPage(request):
+    form = RegisterUserForm()
     context = {
-        
+        'form': form
+
     }
     return render(request,'register.html', context)
 
