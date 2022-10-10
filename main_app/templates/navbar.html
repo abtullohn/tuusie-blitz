@@ -6,12 +6,14 @@
     <div class='user-name'>
         <ul>
             {% if user.is_authenticated%}
-            <li><a href='#'>Login</a></li>
-            <li><a href='{%url 'register' %}'>Register</a></li>
-           
-            {% else %}
             <li><a href='#'> Ask Questions</a></li>
             <li><a href='#'>Logout</a></li>
+           
+           
+            {% else %}
+            <li><a href='{%url 'login' %}'>Login</a></li>
+            <li><a href='{%url 'register' %}'>Register</a></li>
+            
            
             {% endif %}
 

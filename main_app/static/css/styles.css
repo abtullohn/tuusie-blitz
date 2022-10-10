@@ -60,11 +60,13 @@ ul{
     flex-direction: column;
 }
 
+.login-page,
 .register-page{
     margin: 0 auto;
     min-width: 50%;
     max-width: 50%;
 }
+
 
 .title{
     margin: 20px auto 30px auto;
