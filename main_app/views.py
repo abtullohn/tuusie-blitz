@@ -2,8 +2,9 @@ from ast import Try
 from telnetlib import LOGOUT
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout
+from django.contrib.auth.decorators import login_required
 from .models import Question
-from .forms import RegisterUserForm, LoginForm
+from .forms import RegisterUserForm, LoginForm, NewQuestionForm
 # Create your views here
 
 def registerPage(request):
@@ -45,9 +46,17 @@ def loginPage(request):
     context ={'form': form}
     return render(request, 'login.html', context)
 
+
+@login_required(login_url='register')
 def logoutPage(request):
     logout(request)
     return redirect('login')
+
+@login_required(login_url='register')
+def newQuestionPage(request):
+    form = NewQuestionForm()
+    context={'form': form}
+    return render(request, 'new-question.html', context)
 
 def homePage(request):
     questions = Question.objects.all().order_by('-created_at')

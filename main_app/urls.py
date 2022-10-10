@@ -6,6 +6,9 @@ urlpatterns = [
     path('login', views.loginPage, name='login'),
     path('logout', views.logoutPage, name='logout'),
     path('', views.homePage, name ='index'),
-    path('question/<int:id>', views.questionPage, name='question')
+    path('new-question', views.newQuestionPage, name='new-question'),
+    path('question/<int:id>', views.questionPage, name='question'),
+    
+    
 
 ]

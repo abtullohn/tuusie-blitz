@@ -1,6 +1,7 @@
 from pyexpat import model
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
+from .models import Question
 from django import forms
 
 
@@ -28,3 +29,9 @@ def __init__(self, *args, **kwargs):
 class LoginForm(AuthenticationForm):
     class Meta:
         fields = '__all__'
+
+
+class NewQuestionForm(forms.ModelForm):
+    class Meta:
+        model = Question
+        fields = ['title', 'body']
