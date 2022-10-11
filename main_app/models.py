@@ -13,6 +13,8 @@ class Question(models.Model):
     def __str__(self):
         return self.title
 
+    def get_response(self):
+        return self.responses.filter(parent=None)
 
 class Response(models.Model):
     user = models.ForeignKey(User, null=False, on_delete=models.CASCADE)

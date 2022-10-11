@@ -14,7 +14,11 @@
     {% if not question.response.all %}
     <p class='no-response-text'>No Responses Yet</p>
     {%else%}
-    
+        {% for response in question.get_responses %}
+
+            {% include 'components/response.html' with response=response %}
+
+        {%endfor%}
 
     {% endif %}
 
