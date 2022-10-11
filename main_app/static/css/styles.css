@@ -38,6 +38,7 @@ blockquote{
     flex-direction: row;
     justify-content: space-between;
     padding: 0 24px;
+    background-color: yellow;
 
     border-bottom: 1px solid lightgrey;
 }

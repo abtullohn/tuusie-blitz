@@ -80,6 +80,8 @@ def homePage(request):
     }
     return render(request,'homepage.html', context)
 
+
+@login_required(login_url='register')
 def questionPage(request, id):
     response_form = NewResponseForm()
     reply_form = NewReplyForm()
