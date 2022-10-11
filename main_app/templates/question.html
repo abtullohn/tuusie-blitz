@@ -4,8 +4,35 @@
 {% block content%}
 
 <div class ='page question-page'>
-<h1 class='title'></h1>
+<h2 class='question-title'>{{question.title}}</h2>
+<p class='question-body'>{{question.body}}</p>
+<span class='question-author'>Author: {{question.author.username}}</span>
 
+<div class='responses-container'>
+    <h4 class='responses-container-heading'>Responses</h4>
+
+    {% if not question.response.all %}
+    <p class='no-response-text'>No Responses Yet</p>
+    {%else%}
+    
+
+    {% endif %}
+
+</div>
+
+{% if user.is_authenticated %}
+
+<form method='POST' action='' class='response-form'>
+{% csrf_token %}
+<div class='fieldWrapper'>
+    <label for='{{response_form.body.id_for_label}}'>Your answer:</label>
+    {{response_form.body}}
+    <span class='error'>{{form.body.errors}}</span>
+</div>
+<input type='submit' value='send' class='submit-button'/>
+</form>
+
+{% endif %}
 </div>
    
 {% endblock %}

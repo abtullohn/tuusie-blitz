@@ -1,7 +1,7 @@
 from pyexpat import model
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
-from .models import Question
+from .models import Question, Response
 from django import forms
 
 
@@ -41,3 +41,8 @@ class NewQuestionForm(forms.ModelForm):
                 'placeholder': 'What is the topic?'
             })
         }
+
+class NewResponseForm(forms.ModelForm):
+    class Meta:
+        model = Response
+        fields = ['body']
