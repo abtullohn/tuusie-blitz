@@ -157,7 +157,7 @@ blockquote{
 
 .question-body{
     margin-bottom: 6px;
-    border-bottom: 1px black;
+   
 }
 
 .question-author{
@@ -175,6 +175,20 @@ blockquote{
     color: lightgray
     ;
 }
+.response-form{
+    margin-top: 20px;
+    border-top: 1px black;
+    padding: 30px;
+}
+
+.reply-form-container{
+    display: none;
+
+}
+
+.reply-form-container.enabled{
+    display: block;
+}
 
 .responses-container-heading{
     color: black;
@@ -182,15 +196,17 @@ blockquote{
 
 .response-body{
     margin: 0px;
+    color: black;
+    font-size: 18px;
 
 }
 
-.reponse-author{
-    color: black;
+.response-author{
+    color: lightgray;
     font-style: italic;
 }
 
-.reply-button{
+.reply-button {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -199,8 +215,27 @@ blockquote{
     cursor: pointer;
 }
 
-.response-form{
-    margin-top: 20px;
-    border-top: 1px black;
-    padding: 30px;
+.reply-form textarea{
+    background-color: black;
+    width: 100%;
+}
+
+.reply-form-cancel-button{
+    font-weight: 600;
+    color: salmon;
+    background-color: transparent;
+    border: none;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.reply-form-submit-button{
+    font-weight: 600;
+    color: white;
+    background-color: purple;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+
 }

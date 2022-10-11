@@ -54,7 +54,7 @@ class NewReplyForm(forms.ModelForm):
         model = Response
         fields = ['body']
         widgets ={
-            'body' : forms.Textarea(attr={
+            'body' : forms.Textarea(attrs={
                 'rows': 2,
                 'placeholder': 'What do you know?'
             })
