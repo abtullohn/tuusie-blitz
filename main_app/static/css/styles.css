@@ -1,6 +1,8 @@
 html,
 body{
     font-family:Arial, Helvetica, sans-serif;
+    
+    
 }
 *, *::after, *::before {
     box-sizing: border-box;
@@ -16,9 +18,11 @@ ul{
 }
 
 .logo{
-    margin-left: 350px;
+    margin-left: 290px;
 
 }
+
+
 
 
 blockquote{
@@ -38,7 +42,7 @@ blockquote{
 }
 
 .question{
-    margin-top: 15px;
+    margin-top: 51px;
 }
 
 .user-menu ul li a
@@ -60,6 +64,9 @@ blockquote{
 
 }
 
+.background{
+    background-color: aqua;
+}
 
 .page{
     display: flex;
