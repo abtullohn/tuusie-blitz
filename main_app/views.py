@@ -87,11 +87,11 @@ def questionPage(request, id):
         try:
             response_form = NewResponseForm(request.POST)
             if response_form.is_valid():
-                response = response_form.save(commit=False)
-                response.user = request.user
-                response.question = Question(id=id)
-                response.save()
-                return redirect('/question/'+str(id)+'#'+str(response.id))
+                # response = response_form.save(commit=False)
+                # response.user = request.user
+                # response.question = Question(id=id)
+                # response.save()
+                # return redirect('/question/'+str(id)+'#'+str(response.id))
         except Exception as e:
             print(e)
             raise
