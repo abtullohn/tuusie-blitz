@@ -1,7 +1,6 @@
 html,
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background-color: purple;
 }
 *, *::after, *::before {
     box-sizing: border-box;
@@ -28,9 +27,9 @@ blockquote{
     margin: 60px auto;
     padding: 24px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(174, 54, 174);
 
-    box-shadow: 5px 10px #888888;
+    box-shadow: 10px 10px rgb(70, 3, 70);
 }
 
 .navbar{
