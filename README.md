@@ -24,3 +24,4 @@ An application to ask questions and get answers that you need!
 - Django
 - Python
 - Postgresql
+- JavaScript
