@@ -15,6 +15,11 @@ ul{
     padding: 0;
 }
 
+.logo{
+    margin-left: 350px;
+
+}
+
 
 blockquote{
     border-left: 6px solid lightgray;
@@ -32,14 +37,8 @@ blockquote{
     box-shadow: 10px 10px rgb(70, 3, 70);
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 24px;
-    background-color: yellow;
-
-    border-bottom: 1px solid lightgrey;
+.question{
+    margin-top: 15px;
 }
 
 .user-menu ul li a
