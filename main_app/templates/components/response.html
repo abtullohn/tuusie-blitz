@@ -3,7 +3,7 @@
     <small class='response-author'>by {{response.user.username}}</p>
 
 
-    {% comment %} {% if user.is_authenticated %} {% endcomment %}
+    {% if user.is_authenticated %}
     <button class='reply-button'>Reply</button>
     {% endif %}
 
