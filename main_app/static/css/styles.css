@@ -192,7 +192,7 @@ blockquote{
 }
 
 .response-container-heading{
-    color: black;
+    color: lightgray;
 }
 
 .response-body{
@@ -217,7 +217,7 @@ blockquote{
 }
 
 .reply-form textarea{
-    background-color: black;
+    background-color: lightgrey;
     width: 100%;
 }
 
