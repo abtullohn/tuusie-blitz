@@ -11,14 +11,14 @@
 <div class='responses-container'>
     <h4 class='responses-container-heading'>Responses</h4>
 
-    {% if not question.response.all %}
+    {% if not question.responses.all %}
     <p class='no-response-text'>No Responses Yet</p>
-    {%else%}
+    {% else %}
         {% for response in question.get_responses %}
 
             {% include 'components/response.html' with response=response %}
 
-        {%endfor%}
+        {% endfor %}
 
     {% endif %}
 
@@ -37,6 +37,10 @@
 </form>
 
 {% endif %}
+
+
+
+
 </div>
    
 {% endblock %}

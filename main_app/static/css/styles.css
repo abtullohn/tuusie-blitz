@@ -16,6 +16,13 @@ ul{
     padding: 0;
 }
 
+
+blockquote{
+    border-left: 6px solid lightgray;
+    padding-left: 6px;
+    margin-left: 15px;
+}
+
 .main{
     max-width: 800px;
     margin: 60px auto;
@@ -141,4 +148,59 @@ ul{
     background-color: black;
     color:white;
     cursor: pointer;
+}
+
+.question-title{
+    font-weight: 900;
+    margin: 20px auto 0 auto;
+}
+
+.question-body{
+    margin-bottom: 6px;
+    border-bottom: 1px black;
+}
+
+.question-author{
+    font-size: 14px;
+    color: lightgray;
+
+}
+
+.responses-container{
+    border-top: 1px solid black;
+    margin-top: 30px;
+}
+
+.no-responses-text{
+    color: lightgray
+    ;
+}
+
+.responses-container-heading{
+    color: black;
+}
+
+.response-body{
+    margin: 0px;
+
+}
+
+.reponse-author{
+    color: black;
+    font-style: italic;
+}
+
+.reply-button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-transform: lowercase;
+    color:lightgray;
+    cursor: pointer;
+}
+
+.response-form{
+    margin-top: 20px;
+    border-top: 1px black;
+    padding: 30px;
 }
