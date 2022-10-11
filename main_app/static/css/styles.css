@@ -178,6 +178,7 @@ blockquote{
 .response-form{
     margin-top: 20px;
     border-top: 1px black;
+    background-color: transparent;
     padding: 30px;
 }
 
