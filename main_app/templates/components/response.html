@@ -4,6 +4,8 @@
   
     {% if user.is_authenticated %}
       <button class="reply-button" onclick="handleReplyButton({{response.id}})">Reply</button>
+      <button type="button" class="reply-form-delete-button" onclick"handleDeleteReply({{response.id}})">Delete</button>
+
     {% endif %}
   
     <blockquote id="reply-form-container-{{response.id}}" class="reply-form-container">

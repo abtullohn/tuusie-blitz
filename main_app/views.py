@@ -5,6 +5,7 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from .models import Question, Response
 from .forms import RegisterUserForm, LoginForm, NewQuestionForm, NewResponseForm, NewReplyForm
+
 # Create your views here
 
 def registerPage(request):
@@ -63,6 +64,10 @@ def newQuestionPage(request):
                 question = form.save(commit=False)
                 question.author = request.user
                 question.save()
+            
+            else:
+                return redirect('question')
+                
 
         except Exception as e:
             print(e)
@@ -72,6 +77,7 @@ def newQuestionPage(request):
 
     context={'form': form}
     return render(request, 'new-question.html', context)
+    
 
 def homePage(request):
     questions = Question.objects.all().order_by('-created_at')
@@ -126,3 +132,10 @@ def replyPage(request):
             raise
 
     return redirect('index')
+
+def quizPage(request):
+    questions = Question.objects.order_by('-id')[0].id
+    context ={}
+    return render(request,'quiz.html', context)
+
+# def delete(request, id):

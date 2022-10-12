@@ -29,3 +29,5 @@ class Response(models.Model):
 
     def get_responses(self):
         return Response.objects.filter(parent=self)
+
+
