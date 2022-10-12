@@ -1,1 +1,28 @@
-<h1>Quiz</h1>
+{%extends 'layouts/page.html'%}
+
+{% block content%}
+   <h1>Below Average Trivia</h1>
+   
+  </div>
+    <div class="container">
+        <iframe class="potato" allow="fullscreen" frameBorder="0" height="200" src="https://giphy.com/embed/i3p2etunwNjIydPgkS/video" width="200"></iframe>
+        <div id="question-container" class="hide">
+            <div id="question">Are you smarter than a potato?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">potato 1</button>
+                <button class="btn">potato 2</button>
+                <button class="btn">potato 3</button>
+                <button class="btn">potato 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            
+            
+            
+        </div>
+        <script src='quiz.js'></script>
+    </div>
+{% endblock %}
