@@ -1,6 +1,9 @@
-const startButton = document.getElementById('start-btn')
+console.log('quiz.js loaded')
+const startButton = document.querySelector('#start-btn');
+console.log(startButton)
 const questionContainerElement = document.getElementById('question-container')
 const nextButton = document.getElementById('next-btn')
+// console.log(nextButton)
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const endGame = document.getElementById('ending')
@@ -13,6 +16,7 @@ let currentQuestionIndex
 
 //  endGame.classList.toggle('hide')
 startButton.addEventListener('click', startGame)
+// console.log(startButton)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
@@ -20,6 +24,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
     startButton.classList.add('hide')
+    console.log('')
     // answerButtons.classList.add('hide')
     questionContainerElement.classList.remove('hide')
     
