@@ -14,12 +14,12 @@ function handleReplyButton(responseId) {
     
     }
 
-    function handleDeleteReply(responseId){
-      const replyFormContainer = document.getElementById(`reply-form-container-${responseId}`)
-      if (replyFormContainer){
-        replyFormContainer.className = 'reply-form-container'
-      }
-    }
+    // function handleDeleteReply(responseId){
+    //   const replyFormContainer = document.getElementById(`reply-form-container-${responseId}`)
+    //   if (replyFormContainer){
+    //     replyFormContainer.className = 'reply-form-container'
+    //   }
+    // }
   
 
 

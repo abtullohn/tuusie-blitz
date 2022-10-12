@@ -2,7 +2,7 @@
 
 
 {% block content%}
-
+<a href="{% url 'delete' question.pk %}"class='delete-btn'> delete </a>
 <div class ='page question-page'>
 <h2 class='question-title'>{{question.title}}</h2>
 <p class='question-body'>{{question.body}}</p>

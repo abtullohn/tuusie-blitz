@@ -9,7 +9,8 @@ urlpatterns = [
     path('quiz', views.quizPage, name='quiz'),
     path('new-question', views.newQuestionPage, name='new-question'),
     path('question/<int:id>', views.questionPage, name='question'),
-    path('reply', views.replyPage, name='reply')
+    path('reply', views.replyPage, name='reply'),
+    path('question/<int:pk>/delete/', views.QuestionDelete.as_view(), name='delete')
     
     
 

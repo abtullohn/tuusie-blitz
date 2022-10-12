@@ -5,6 +5,7 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from .models import Question, Response
 from .forms import RegisterUserForm, LoginForm, NewQuestionForm, NewResponseForm, NewReplyForm
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 # Create your views here
 
@@ -138,4 +139,15 @@ def quizPage(request):
     context ={}
     return render(request,'quiz.html', context)
 
-# def delete(request, id):
+
+class QuestionDelete(DeleteView):
+    model = Question
+    template_name = 'delete.html'
+    success_url = '/'
+
+
+# class ResponseEdit(EditView):
+
+
+# class ResponseUpdate(UpdateView):
+
