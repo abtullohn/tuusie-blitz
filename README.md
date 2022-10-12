@@ -25,3 +25,6 @@ An application to ask questions and get answers that you need!
 - Python
 - Postgresql
 - JavaScript
+- HTML
+- CSS
+
