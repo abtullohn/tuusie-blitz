@@ -67,7 +67,7 @@ def newQuestionPage(request):
                 question.save()
             
             else:
-                return redirect('question')
+                return redirect('index')
                 
 
         except Exception as e:

@@ -3,6 +3,7 @@ const startButton = document.querySelector('#start-btn');
 console.log(startButton)
 const questionContainerElement = document.getElementById('question-container')
 const nextButton = document.getElementById('next-btn')
+// const backButton = document.getElementById('back-btn')
 // console.log(nextButton)
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -114,12 +115,12 @@ function clearStatusClass(element) {
 
 let questions = [
     {
-        question: 'which state is known for potatoes?',
+        question: 'Which position does Tom Brady plays?',
         answers: [
-            {text: 'Idaho', correct: true},
-            {text: 'Alabama', correct: false},
-            {text: 'New Jersey', correct:false},
-            {text: 'Oregon', correct: false}
+            {text: 'Running Back', correct: false},
+            {text: 'Quarter Back', correct: true},
+            {text: 'Saftey', correct:false},
+            {text: 'Offensive Linemen', correct: false}
         ]
     },
     {

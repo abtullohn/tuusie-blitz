@@ -2,7 +2,6 @@
 
 
 {% block content%}
-<a href="{% url 'delete' question.pk %}"class='delete-btn'> delete </a>
 <div class ='page question-page'>
 <h2 class='question-title'>{{question.title}}</h2>
 <p class='question-body'>{{question.body}}</p>
@@ -33,7 +32,10 @@
     {{response_form.body}}
     <span class='error'>{{form.body.errors}}</span>
 </div>
+{% if user.is_authenticated %}
 <input type='submit' value='send' class='submit-button'/>
+<a href="{% url 'delete' question.pk %}"class='delete-btn'> delete </a>
+{% endif %}
 </form>
 
 {% endif %}
