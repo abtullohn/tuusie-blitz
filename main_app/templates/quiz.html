@@ -1,13 +1,15 @@
 {%extends 'layouts/page.html'%}
-<script src='js/quiz.js' defer ></script>
-<script src='statc/css/quiz.css'></script>
+<script defer src='js/quiz.js' defer ></script>
 {% block content%}
-   <h1>FOOSEBALL QUIZ</h1>
+<h1>FOOSEBALL QUIZ</h1>
+   {% comment %} <iframe src="https://i.imgur.com/4eSenqy.gif"/> {% endcomment %}
    
    
-  </div>
+
     <div class="container">
-        <div id="question-container" class="hide">
+        
+        <h2 >Results: <span id='results'></span></h2>
+        <div id="question-container" class="hidden">
             <div id="question">Are you smarter than a Football?</div>
             <div id="answer-buttons" class="btn-grid">
                 {% comment %} <button class="btn">potato 1</button>
@@ -27,4 +29,5 @@
         </div>
         
     </div>
+
 {% endblock %}

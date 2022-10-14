@@ -5,13 +5,15 @@ const questionContainerElement = document.getElementById('question-container')
 const nextButton = document.getElementById('next-btn')
 // const backButton = document.getElementById('back-btn')
 // console.log(nextButton)
+const result = document.getElementById('results')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const endGame = document.getElementById('ending')
 
 
 
-
+let correctAnswer
+let wrongAnswer
 let shuffledQuestions 
 let currentQuestionIndex
 
@@ -24,10 +26,12 @@ nextButton.addEventListener('click', () => {
 })
 
 function startGame() {
-    startButton.classList.add('hide')
+    correctAnswer = 0
+    wrongAnswer = 0
+    startButton.classList.add('hidden')
     console.log('')
     // answerButtons.classList.add('hide')
-    questionContainerElement.classList.remove('hide')
+    questionContainerElement.classList.remove('hidden')
     
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -74,11 +78,21 @@ function selectAnswer(e) {
   const selectedButton = e.target
   console.log(selectedButton)
   const correct = selectedButton.dataset.correct
-  setStatusClass(e.target,correct)
-  Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
+  
+//   result.innerText = (wrongAnswer)
+  Array.from(answerButtonsElement.children).map(button => {
     
-  })
+    console.log(button.dataset)
+    
+   })
+   if(correct){
+    setStatusClass(selectedButton, selectedButton.dataset.correct)
+   }else{
+    wrongAnswer -=1
+    selectedButton.classList.add('wrong')
+   }
+   result.innerText = (correctAnswer)
+  
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
@@ -89,13 +103,21 @@ function selectAnswer(e) {
   }
 }
 function setStatusClass(element, correct) {
-  clearStatusClass(element)
-  if (correct) {
+//   clearStatusClass(element)
+  if (correct == 'true') {
+    // console.log(typeof correct)
+    correctAnswer += 1
+    // console.log(correctAnswer)
     element.classList.add('correct')
+    
+    
+
    
     
   } else {
+    wrongAnswer -= 1
     element.classList.add('wrong')
+    
    
   }
   }
@@ -124,39 +146,39 @@ let questions = [
         ]
     },
     {
-        question: 'when was lays company found?',
+        question: 'Which team does Saquon Barkley plays for?',
         answers: [
-            {text: 'Sept 1962', correct: false},
-            {text: 'Sept 1971', correct: false},
-            {text: 'Aug 1961', correct:false},
-            {text: 'Sept 1961', correct: true}
+            {text: 'Ravens', correct: false},
+            {text: 'Cowboys', correct: false},
+            {text: 'Buccs', correct:false},
+            {text: 'Giants', correct: true}
         ]
     },
     {
-        question: 'what food contains potatoes in it?',
+        question: 'What position does Justin Tucker plays?',
         answers: [
-            {text: 'burgers', correct: false},
-            {text: 'tator tots', correct: true},
-            {text: 'lasagna', correct:false},
-            {text: 'cereal', correct: false}
+            {text: 'WaterBoy', correct: false},
+            {text: 'Kicker', correct: true},
+            {text: 'Punter', correct:false},
+            {text: 'TightEnd', correct: false}
         ]
     },
     {
-        question: 'what is a potato consist of?',
+        question: 'Which city does the Cowboys play for?',
         answers: [
-            {text: '20% water 80% solid', correct: false},
-            {text: '80% water 20% solid', correct: true},
-            {text: 'its just a potato', correct:false},
-            {text: '100% solid', correct: false}
+            {text: 'Philadelphia', correct: false},
+            {text: 'Dallas', correct: true},
+            {text: 'Austin', correct:false},
+            {text: 'Vegas', correct: false}
         ]
     },
     {
-        question: 'how much potato does an average american consume per year?',
+        question: 'Which team originally drafted Eli Mannning?',
         answers: [
-            {text: '2 pounds', correct: false},
-            {text: '110 pounds', correct: false},
-            {text: '111 pounds', correct: true},
-            {text: '9 pounds', correct: false}
+            {text: 'Giants', correct: false},
+            {text: 'Saints', correct: false},
+            {text: 'Chargers', correct: true},
+            {text: 'Eagles', correct: false}
         ]
     },
    
