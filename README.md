@@ -1,5 +1,6 @@
 # TuusieCloud
-An application to ask questions and get answers that you need!
+An application to ask football questions and get answers that you need!
+Want to test your knoweldge in football? Well you can! There's a mini-quiz that you can take to test that knowledge.
 
 
 # User stories
@@ -9,16 +10,24 @@ An application to ask questions and get answers that you need!
 
 
 # WireFrames
-<img width="325" alt="Screen Shot 2022-10-10 at 11 02 19 AM" src="https://user-images.githubusercontent.com/109837082/194897237-b409c2bc-9f5f-4157-930b-3ad6e5e529f9.png">
+<img width="1405" alt="Screen Shot 2022-10-14 at 3 18 26 PM" src="https://user-images.githubusercontent.com/109837082/195925684-24f9dce5-e2ba-4ae2-a672-4d004f48869a.png">
+
+<img width="1372" alt="Screen Shot 2022-10-14 at 3 18 49 PM" src="https://user-images.githubusercontent.com/109837082/195925701-a481ffc9-4572-4585-b5c6-9d96fa8606a8.png">
+
+<img width="1407" alt="Screen Shot 2022-10-14 at 3 19 47 PM" src="https://user-images.githubusercontent.com/109837082/195925725-6080de7e-c54d-4e70-a3ff-46598cad6198.png">
 
 
+<img width="1356" alt="Screen Shot 2022-10-14 at 3 20 08 PM" src="https://user-images.githubusercontent.com/109837082/195925743-c2d81db6-1998-4e51-833e-2ce2d052d5ac.png">
 
-<img width="503" alt="Screen Shot 2022-10-10 at 11 02 50 AM" src="https://user-images.githubusercontent.com/109837082/194897283-c9cd988a-38f6-4c6f-8411-044cca934ca9.png">
+<img width="1413" alt="Screen Shot 2022-10-14 at 3 20 41 PM" src="https://user-images.githubusercontent.com/109837082/195925758-791d982c-39a9-4ad8-a6a6-9912ea4024ed.png">
+
+<img width="1414" alt="Screen Shot 2022-10-14 at 3 22 16 PM" src="https://user-images.githubusercontent.com/109837082/195925870-ba6c8541-c209-4bca-9328-cd9acdd3323a.png">
 
 
 # ERD
+<img width="1248" alt="Screen Shot 2022-10-14 at 3 17 05 PM 1" src="https://user-images.githubusercontent.com/109837082/195924410-aedafd27-9c50-4fe5-96c7-396378926356.png">
 
-<img width="901" alt="Screen Shot 2022-10-10 at 11 05 48 AM" src="https://user-images.githubusercontent.com/109837082/194897519-4b502009-ee6a-40ee-a9e0-b57ac650ec52.png">
+
 
 # Technologies Used
 - Django
@@ -27,4 +36,4 @@ An application to ask questions and get answers that you need!
 - JavaScript
 - HTML
 - CSS
-
+- Canva
