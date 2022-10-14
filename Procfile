@@ -1,0 +1,1 @@
+web: gunicorn tuusie_project.wsgi
