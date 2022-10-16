@@ -65,9 +65,9 @@ def newQuestionPage(request):
                 question = form.save(commit=False)
                 question.author = request.user
                 question.save()
-            
-            else:
                 return redirect('index')
+                
+                
                 
 
         except Exception as e:
@@ -78,6 +78,9 @@ def newQuestionPage(request):
 
     context={'form': form}
     return render(request, 'new-question.html', context)
+    
+    
+    
     
 
 def homePage(request):

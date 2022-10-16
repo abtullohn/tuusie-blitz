@@ -9,6 +9,7 @@ const result = document.getElementById('results')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const endGame = document.getElementById('ending')
+// const img = document.getElementById('images')
 
 
 
@@ -51,6 +52,10 @@ function showQuestion(question) {
         const button = document.createElement('button')
         button.innerText = answers.text
         button.classList.add('btn')
+        // create a DOM for images
+        // inner text for url/images
+        // dynamically input the images per question
+        // images.innerText = question.url
         if (answers.correct) {
           button.dataset.correct = answers.correct
         }
@@ -138,6 +143,7 @@ function clearStatusClass(element) {
 let questions = [
     {
         question: 'Which position does Tom Brady plays?',
+        url: 'https://media.cnn.com/api/v1/images/stellar/prod/221013095251-01-tom-brady-pickleball.jpg?c=16x9&q=h_540,w_960,c_fill',
         answers: [
             {text: 'Running Back', correct: false},
             {text: 'Quarter Back', correct: true},
