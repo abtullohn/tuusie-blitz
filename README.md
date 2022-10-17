@@ -9,7 +9,7 @@ Want to test your knoweldge in football? Well you can! There's a mini-quiz that 
 - Reply to a response
 
 
-# WireFrames
+# Screenshots
 <img width="1405" alt="Screen Shot 2022-10-14 at 3 18 26 PM" src="https://user-images.githubusercontent.com/109837082/195925684-24f9dce5-e2ba-4ae2-a672-4d004f48869a.png">
 
 <img width="1372" alt="Screen Shot 2022-10-14 at 3 18 49 PM" src="https://user-images.githubusercontent.com/109837082/195925701-a481ffc9-4572-4585-b5c6-9d96fa8606a8.png">
