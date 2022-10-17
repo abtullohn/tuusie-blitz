@@ -1,6 +1,7 @@
 # TuusieCloud
-An application to ask football questions and get answers that you need!
+An application to ask any football questions you'd like and get answers that you need!
 Want to test your knoweldge in football? Well you can! There's a mini-quiz that you can take to test that knowledge.
+
 
 
 # User stories
