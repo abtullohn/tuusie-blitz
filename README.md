@@ -36,4 +36,5 @@ Want to test your knoweldge in football? Well you can! There's a mini-quiz that 
 - JavaScript
 - HTML
 - CSS
+- Bootstrap
 - Canva
